@@ -1,0 +1,51 @@
+.nav {
+  position: fixed;
+  width: 100%; /* position이 fixed 이면 꼭 width 필요 */
+  background-color: #fcfcfc;
+  padding: 20px 50px;
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+  box-sizing: border-box;
+  /* 기본적으로는 padding 을 추가하면 박스사이즈가 더 커지만 위와 같이 적으면 박스크기가 커지는걸 방지 */
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__List-Link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  color: white;
+  font-size: 12px;
+  background-color: #dc5d46;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}

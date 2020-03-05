@@ -1,0 +1,101 @@
+<!-- 채팅화면(처음열리는 화면) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chats | Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">12:17</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar___battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header__header-column">
+        <!-- 간격이 있으므로 박스에 아이콘 -->
+        <h1 class="header__title">채팅</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <!-- 브라우져내에서의 메인 -->
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <image
+                  src="images/ryan.jpg"
+                  class="m-avatar friend__avatar"
+                ></image>
+                <div class="friend__content">
+                  <span class="friend__name">제니</span>
+                  <span class="friend__bottom-text">ok</span>
+                </div>
+              </div>
+              <div class="freind__column">
+                <span class="chat__timestamp">오전 12:45</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <!-- 아랫바 -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__List-item">
+          <a href="friends.html" class="nav__List-Link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__List-item">
+          <a href="index.html" class="nav__List-Link">
+            <div class="nav__badge">8</div>
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__List-item">
+          <a href="find.html" class="nav__List-Link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__List-item">
+          <a href="more.html" class="nav__List-Link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">화면을 작게 만들어주세요!</span>
+    </div>
+  </body>
+</html>

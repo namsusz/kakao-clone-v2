@@ -1,0 +1,125 @@
+<!-- 찾기화면 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Find | Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <spqn class="status-bar__clock">12:17</spqn>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar___battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <!-- 간격이 있으므로 박스에 아이콘 -->
+        <h1 class="header__title">찾기</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-list">
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-qrcode fa-3x"></i>
+            </span>
+            <span class="header-btn__title">
+              QR 코드
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="far fa-address-book fa-3x"></i>
+            </span>
+            <span class="header-btn__title">
+              연락처로 추가
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-passport fa-3x"></i>
+            </span>
+            <span class="header-btn__title">
+              아이디로 추가
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="far fa-envelope fa-3x"></i>
+            </span>
+            <span class="header-btn__title">
+              초대
+            </span>
+          </li>
+        </ul>
+      </header>
+      <ul class="find__recommended">
+        <h5 class="find__title">추천 친구</h5>
+        <li class="find__friend friend friend--lg">
+          <div class="friend__column">
+            <image src="images/ryan.jpg" class="friend__avatar"></image>
+            <div class="friend__content">
+              <span class="friend__name">라이언</span>
+            </div>
+          </div>
+          <div class="freind__column">
+            <div class="friend__add-btn">
+              <i class="fas fa-user-plus fa=2x"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__List-item">
+          <a href="friends.html" class="nav__List-Link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__List-item">
+          <a href="index.html" class="nav__List-Link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__List-item">
+          <a href="find.html" class="nav__List-Link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__List-item">
+          <a href="more.html" class="nav__List-Link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">화면을 작게 만들어주세요!</span>
+    </div>
+  </body>
+</html>

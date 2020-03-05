@@ -1,0 +1,15 @@
+.status-bar {
+  display: flex; /* 가로정렬 */
+  justify-content: space-between;
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
+
+.status-bar i {
+  /* 아이콘 사이즈 */
+  font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level {
+  margin-left: 5px;
+}
